@@ -15,10 +15,6 @@ justify-content: center;
 }
 
 
-.empty-div {
-  width: 100px;
-  height: 10px;
-}
 
 .my-div h1 {
   color: rgb(240, 239, 234);
@@ -138,3 +134,30 @@ justify-content: center;
    width: 90%;
  }
 } 
+
+@media (max-width: 414px){
+  .empty-div {
+    position: relative;
+    margin-top: 20px;
+    width: 80%;
+    height: 15px;
+    background-color: black;
+    border-radius:0 5px 5px 0;
+    color: #fff;
+    margin-bottom: 20px;
+    
+  }
+  
+  .empty-div:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 15px;
+    border-radius:0 5px 5px 0;
+    background-color: chartreuse;
+    animation: enea 3s;
+    
+  }
+}
