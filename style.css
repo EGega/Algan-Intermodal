@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+}
+
+.my-div{
+height: 100vh;
+background-image: url('/img/andy-li-CpsTAUPoScw-unsplash.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+
+.empty-div {
+  width: 100px;
+  height: 10px;
+}
+
+.my-div h1 {
+  color: rgb(240, 239, 234);
+  font-size: 3rem;
+  background-color: rgba(7, 7, 7, 0.575);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+.my-div h3 {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.596);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+#btn {
+  background: #222;
+  padding: 10px;
+  height: 50px;
+  min-width: 150px;
+  border: none;
+  border-radius: 10px;
+  color: #eee;
+  font-size: 40px;
+  font-family: 'Cookie', cursive;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+  margin-bottom: 20px;
+}
+
+#btn #circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#btn:hover {
+  background: transparent;
+}
+
+#btn:hover #circle {
+  height: 50px;
+  width: 205px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #eee;
+}
+
+.empty-div {
+  position: relative;
+  margin-top: 20px;
+  width: 615px;
+  height: 15px;
+  background-color: black;
+  border-radius:0 5px 5px 0;
+  color: #fff;
+  margin-bottom: 20px;
+  
+}
+.nine{
+  margin-left: 90%;
+  transition: linear 3s;
+
+
+  
+}
+.empty-div:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 15px;
+  border-radius:0 5px 5px 0;
+  background-color: chartreuse;
+  animation: enea 3s;
+  
+}
+.social-media {
+  margin-top: 20px;
+}
+.fb, .insta, .linkedin, .youtube {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  background-color: transparent;
+  color: white;
+}
+
+@keyframes enea {
+ 0% {
+   width: 0%;
+ }
+ 100%{
+   width: 90%;
+ }
+} 
